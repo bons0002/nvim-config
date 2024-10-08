@@ -41,6 +41,9 @@ Plug('saadparwaiz1/cmp_luasnip')
 -- Lualine statusline
 Plug('nvim-lualine/lualine.nvim')
 
+-- Dashboard on boot
+Plug('nvimdev/dashboard-nvim')
+
 vim.call('plug#end')
 
 -- Package configs
@@ -50,3 +53,6 @@ require('packages-configs.code-complete')
 
 -- Catppuccin theme configs
 require('packages-configs.theme')
+
+-- Dashboard configs
+require('packages-configs.dashboard-setup')
