@@ -23,5 +23,11 @@ vim.cmd([[
     set clipboard+=unnamedplus		" Use system clipboard
     set cursorline				    " Highlight the line the cursor is on
     set ttyfast				        " Faster scrollig
+    
+    " Reset cursor on exit
+    augroup RestoreCursor
+        autocmd!
+        autocmd VimLeave * set guicursor=a:ver35
+    augroup END
 
 ]])
