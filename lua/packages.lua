@@ -44,6 +44,16 @@ Plug('nvim-lualine/lualine.nvim')
 -- Dashboard on boot
 Plug('nvimdev/dashboard-nvim')
 
+-- Goyo distract free mode
+Plug('junegunn/goyo.vim')
+
+-- Format tables
+Plug('godlygeek/tabular')
+-- JSON
+Plug('elzr/vim-json')
+-- Markdown
+Plug('preservim/vim-markdown')
+
 vim.call('plug#end')
 
 -- Package configs
