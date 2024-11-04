@@ -10,8 +10,8 @@ vim.cmd([[
     vnoremap <F26> <ESC>:lua require('neotest').run.run(vim.fn.getcwd())<CR>
 
     " Toggle the output panel
-    inoremap <F27> <ESC>:lua require('neotest').output_panel.toggle()<CR>
-    nnoremap <F27> :lua require('neotest').output_panel.toggle()<CR>
-    vnoremap <F27> <ESC>:lua require('neotest').output_panel.toggle()<CR>
+    inoremap <C-F3> <ESC>:lua require('neotest').output_panel.toggle()<CR>
+    nnoremap <C-F3> :lua require('neotest').output_panel.toggle()<CR>
+    vnoremap <C-F3> <ESC>:lua require('neotest').output_panel.toggle()<CR>
 
 ]])
