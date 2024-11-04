@@ -54,6 +54,17 @@ Plug('elzr/vim-json')
 -- Markdown
 Plug('preservim/vim-markdown')
 
+-- Rust tools
+Plug('nvim-treesitter/nvim-treesitter')
+Plug('mfussenegger/nvim-dap')
+Plug('mrcjkb/rustaceanvim')
+
+-- Tests
+Plug('antoinemadec/FixCursorHold.nvim')
+Plug('nvim-neotest/nvim-nio')
+Plug('nvim-neotest/neotest')
+Plug('rouge8/neotest-rust')
+
 vim.call('plug#end')
 
 -- Package configs
@@ -66,3 +77,6 @@ require('packages-configs.theme')
 
 -- Dashboard configs
 require('packages-configs.dashboard-setup')
+
+-- Neotest
+require('packages-configs.neotest-setup')

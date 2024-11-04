@@ -72,6 +72,7 @@ local capabilities = require('cmp_nvim_lsp').default_capabilities()
 require'lspconfig'.pyright.setup{}
 
 -- Rust
+--[[
 require'lspconfig'.rust_analyzer.setup{
     settings = {
         ['rust-analyzer'] = {
@@ -85,6 +86,18 @@ require'lspconfig'.rust_analyzer.setup{
         }
     }
 }
+--]]
+
+-- Ignore annoying error message that interrupts typing
+for _, method in ipairs({ 'textDocument/diagnostic', 'workspace/diagnostic' }) do
+    local default_diagnostic_handler = vim.lsp.handlers[method]
+    vim.lsp.handlers[method] = function(err, result, context, config)
+        if err ~= nil and err.code == -32802 then
+            return
+        end
+        return default_diagnostic_handler(err, result, context, config)
+    end
+end
 
 -- C
 require'lspconfig'.clangd.setup{}
