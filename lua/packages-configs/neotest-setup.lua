@@ -1,7 +1,7 @@
 require('neotest').setup({
     adapters = {
         require('neotest-rust') {
-            args = {'--run-ignored all'},
+            args = {'--run-ignored all', '--locked'},
         },
     },
 })
