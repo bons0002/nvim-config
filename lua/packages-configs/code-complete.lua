@@ -107,3 +107,6 @@ vim.diagnostic.config({ virtual_text = true})
 
 -- Rustfmt on save
 vim.cmd('let g:rustfmt_autosave = 1')
+
+-- Typescript
+require'lspconfig'.ts_ls.setup{}

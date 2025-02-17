@@ -65,6 +65,20 @@ Plug('nvim-neotest/nvim-nio')
 Plug('nvim-neotest/neotest')
 Plug('rouge8/neotest-rust')
 
+-- Haskell
+Plug('mrcjkb/haskell-tools.nvim')
+
+-- Clojure
+Plug('tpope/vim-dispatch')
+Plug('radenling/vim-dispatch-neovim')
+Plug('clojure-vim/vim-jack-in')
+Plug('Olical/conjure')
+Plug('guns/vim-sexp')
+Plug('tpope/vim-sexp-mappings-for-regular-people')
+
+-- Neoformat
+Plug('sbdchd/neoformat')
+
 vim.call('plug#end')
 
 -- Package configs

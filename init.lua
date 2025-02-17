@@ -1,3 +1,5 @@
+vim.g.maplocalleader = ","
+
 -- Package configuration
 require('packages')
 

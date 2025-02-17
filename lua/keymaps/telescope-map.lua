@@ -2,9 +2,9 @@
 
 vim.cmd([[
     " File file_browser
-    inoremap <A-t> <ESC>:Telescope file_browser hidden=true<CR>
-    nnoremap <A-t> :Telescope file_browser hidden=true<CR>
-    vnoremap <A-t> <ESC>:Telescope file_browser hidden=true<CR>
+    inoremap <A-t> <ESC>:Telescope file_browser hidden=true no_ignore=true<CR>
+    nnoremap <A-t> :Telescope file_browser hidden=true no_ignore=true<CR>
+    vnoremap <A-t> <ESC>:Telescope file_browser hidden=true no_ignore=true<CR>
 
     " Telescope git status
     inoremap <A-g> <ESC>:Telescope git_status<CR>

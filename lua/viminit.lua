@@ -29,5 +29,7 @@ vim.cmd([[
         autocmd!
         autocmd VimLeave * set guicursor=a:ver35
     augroup END
+    " Use Prettier in TS
+    autocmd FileType typescript setlocal formatprg=prettier\ --parser\ typescript
 
 ]])
