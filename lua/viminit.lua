@@ -32,4 +32,19 @@ vim.cmd([[
     " Use Prettier in TS
     autocmd FileType typescript setlocal formatprg=prettier\ --parser\ typescript
 
+    " Typescript 2 space tabs
+    autocmd FileType typescript setlocal tabstop=2
+    autocmd FileType typescript setlocal shiftwidth=2
+    autocmd FileType typescript setlocal softtabstop=2
+    autocmd FileType typescriptreact setlocal tabstop=2
+    autocmd FileType typescriptreact setlocal shiftwidth=2
+    autocmd FileType typescriptreact setlocal softtabstop=2
+
+
+    autocmd FileType javascript setlocal tabstop=2
+    autocmd FileType javascript setlocal shiftwidth=2
+    autocmd FileType javascript setlocal softtabstop=2
+    autocmd FileType javascriptreact setlocal tabstop=2
+    autocmd FileType javascriptreact setlocal shiftwidth=2
+    autocmd FileType javascriptreact setlocal softtabstop=2
 ]])
