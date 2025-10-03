@@ -79,9 +79,25 @@ Plug('tpope/vim-sexp-mappings-for-regular-people')
 -- Neoformat
 Plug('sbdchd/neoformat')
 
+-- Mason
+Plug('mason-org/mason.nvim')
+
+-- Java
+Plug('nvim-java/lua-async-await')
+Plug('nvim-java/nvim-java-refactor')
+Plug('nvim-java/nvim-java-core')
+Plug('nvim-java/nvim-java-test')
+Plug('nvim-java/nvim-java-dap')
+Plug('nvim-java/nvim-java')
+Plug('JavaHello/spring-boot.nvim')
+Plug('MunifTanjim/nui.nvim')
+
 vim.call('plug#end')
 
 -- Package configs
+
+-- Mason
+require('packages-configs.mason-setup')
 
 -- Code completion
 require('packages-configs.code-complete')
