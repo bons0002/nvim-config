@@ -17,4 +17,19 @@ require("mason").setup(
 })
 
 require('java').setup({})
-require('lspconfig').jdtls.setup({})
+require('lspconfig').jdtls.setup({
+    settings = {
+        java = {
+            home = "/usr/lib/jvm/jre-21-openjdk",
+            configuration = {
+                runtimes = {
+                    {
+                        name = "JavaSE",
+                        path = "/usr/lib/jvm/jre-21-openjdk",
+                        default = true,
+                    },
+                },
+            }
+        }
+    },
+})
