@@ -102,7 +102,7 @@ end
 -- C
 require'lspconfig'.clangd.setup{}
 
-vim.diagnostic.config({ virtual_lines = true})
+--vim.diagnostic.config({ virtual_lines = true})
 vim.diagnostic.config({ virtual_text = true})
 
 -- Rustfmt on save
